@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+
+  --yellow: #FFD706;
+  --light-gray: #AAA7A7;
+  --red: #EA5455;
+  --dark-red: #c93030;
+  --white: #fff;
+  --purple: #A854EA;
+  --dark-purple: #8e41c9;
+  --dark-gray: #494949;
+
+  
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: url('./images/background.svg');
+  
+}
+
+.toDoList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 95vh;
+  width: 75vh;
+  border-radius: 2px;
+
+  background-color: var(--white);
+
+}
+
+#titleImage {
+  margin: 3rem 0 2rem 0;
+}
+
+.includeTask{
+  display: flex;
+  gap: 0.5rem;
+}
+
+#newTask {
+  width: 50vh;
+  padding-left: 0.5rem;
+  border: 1px solid var(--light-gray);
+}
+
+#includeButton {
+  width: 5rem;
+  height: 2rem;
+
+  background: var(--purple);
+  border-radius: 2px;
+
+  font-weight: 500;
+  color: var(--white);
+
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+#includeButton:hover {
+ transform: translateY(-1px) ;
+ background-color: var(--dark-purple);
+}
+
+ul {
+  margin-top: 1rem;
+  width: 75vh;
+  padding: 2rem;
+}
+
+li {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+
+  padding: 0.4rem;
+
+  font-weight: 300;
+  font-size: 1rem;
+  color: var(--black);
+
+  border-bottom: 1px dashed var(--light-gray);
+}
+
+a {
+  font-weight: 700;
+  color: var(--red);
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  color: var(--dark-red);
+}

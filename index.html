@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Get Things Done</title>
+  </head>
+
+  <body>
+    <div class="toDoList">
+      <h1 id="title">
+        <img
+          id="titleImage"
+          src="./images/titleImage.svg"
+          alt="Text saying: get things done. With a yellow line behind"
+        />
+      </h1>
+
+      <div class="includeTask">
+        <input id="newTask" type="text" placeholder="Digite uma tarefa..." />
+        <button id="includeButton" onclick="addTask()">Incluir</button>
+      </div>
+
+      <div id="taskList">
+        <ul></ul>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
